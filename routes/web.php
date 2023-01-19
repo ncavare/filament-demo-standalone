@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\EditPost;
+use App\Http\Livewire\ListPost;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
+Route::get('', function () {
+    return redirect('/posts');
+});
+
+Route::get('posts', ListPost::class)->name('posts.index');
+Route::get('posts/create', EditPost::class)->name('posts.create');
+Route::get('posts/{post}/edit', EditPost::class)->name('posts.edit');

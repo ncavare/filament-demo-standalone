@@ -6,21 +6,23 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "alperenersoy/filament-export": "dev-main",
+        "filament/tables": "^2.16",
         "guzzlehttp/guzzle": "^7.2",
+        "icetalker/filament-table-repeater": "dev-main",
         "laravel-frontend-presets/tall": "^5.0",
         "laravel/framework": "^9.19",
-        "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.11"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.0",
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "autoload": {
         "psr-4": {
@@ -54,6 +56,16 @@
             "dont-discover": []
         }
     },
+    "repositories": [
+        {
+            "url": "https://github.com/ncavare/filament-table-repeater.git",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/ncavare/filament-export.git",
+            "type": "vcs"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
