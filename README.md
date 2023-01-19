@@ -13,9 +13,9 @@ This can list posts and edit a post with comments
 Create and Modify are in the same livewire component
 This saves the post relationships and sends a notification like in the admin panel
 
-![screenshot list](./images/screen1.jpg)
+![screenshot list](./screenshot/screen1.jpg)
 
-![screenshot edit](./images/screen2.jpg)
+![screenshot edit](./screenshot/screen2.jpg)
 
 
 ## Installation
