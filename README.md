@@ -2,18 +2,33 @@
 
 A demo app to demonstrate how the Filament component works without a full admin panel
 
-This demo include this 3 component : form builder / table builder / notfication 
-https://filamentphp.com/docs/2.x/forms/installation
-https://filamentphp.com/docs/2.x/tables/installation
-https://filamentphp.com/docs/2.x/notifications/installation
+This demo include this 3 components :
+
+Filament form builder : https://filamentphp.com/docs/2.x/forms/installation
+
+Filament table builder : https://filamentphp.com/docs/2.x/tables/installation
+
+Filament notfication : https://filamentphp.com/docs/2.x/notifications/installation
+
+## Why?
+
+Filament offers a demo of its application but there is no demo of the components used in standalone mode.
+
+This can be useful if you want to completely customize the layout, have more control.
 
 ## Feature
 
-This can list posts and edit a post with comments
-Create and Modify are in the same livewire component
-This saves the post relationships and sends a notification like in the admin panel
+This can list posts and edit a post with comments.
+
+Create and Modify are in the same livewire component.
+
+This saves the post relationships and sends a notification like in the admin panel.
+
+List posts
 
 ![screenshot list](./screenshot/screen1.jpg)
+
+Edit post and comments
 
 ![screenshot edit](./screenshot/screen2.jpg)
 
@@ -75,7 +90,8 @@ php artisan serve
 go to http://127.0.0.1:8000
 
 
-#### Note for developper
+## Note for developper
+
 Rebuild the asset in real time if you want to customize the js/cs or if you add the tailwind class in the blade files
 ```sh
 npm run dev
