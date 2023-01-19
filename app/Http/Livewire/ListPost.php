@@ -32,8 +32,8 @@ class ListPost extends Component implements Tables\Contracts\HasTable
     {
         return [
             TextColumn::make('comments_count')->counts('comments')->sortable(),
-            TextColumn::make('title')->sortable()->searchable(),
-            TextColumn::make('slug')->sortable(),
+            TextColumn::make('title')->sortable()->searchable()->limit(20),
+            TextColumn::make('slug')->sortable()->limit(20),
             TextColumn::make('published_at')->date(),
         ];
     }
